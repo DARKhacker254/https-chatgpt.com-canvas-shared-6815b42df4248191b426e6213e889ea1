@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neville Wekesa | Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Neville Wekesa - Full Stack Developer specializing in React, Python, and Web Solutions.">
+  <meta name="keywords" content="Neville Wekesa, Full Stack Developer, React Developer, Python Developer, Portfolio, Freelance Web Developer">
+  <meta name="author" content="Neville Wekesa">
+  <meta property="og:title" content="Neville Wekesa | Full Stack Developer">
+  <meta property="og:description" content="Explore the portfolio of Neville Wekesa, a full stack developer available for freelance and contract work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nevillewekesa.dev">
+  <meta property="og:image" content="https://nevillewekesa.dev/preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Neville Wekesa | Full Stack Developer">
+  <meta name="twitter:description" content="Explore the portfolio of Neville Wekesa, a full stack developer available for freelance and contract work.">
+  <meta name="twitter:image" content="https://nevillewekesa.dev/preview.png">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script defer data-domain="nevillewekesa.dev" src="https://plausible.io/js/plausible.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 1rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    section h2, h1 {
+      margin-top: 0;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    @media (max-width: 600px) {
+      main {
+        padding: 0.5rem;
+      }
+      form input, form textarea, form button {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Rendering Portfolio Page");
+
+      const app = document.getElementById("app");
+      app.innerHTML = `
+        <main>
+          <section style="text-align: center;">
+            <h1>Hello, I'm Neville Wekesa</h1>
+            <p>Full Stack Developer | Open to Freelance</p>
+            <div>
+              <a href="mailto:neville@example">Email</a>
+              <a href="https://github.com/NevilleWekesa">GitHub</a>
+              <a href="https://linkedin.com/in/NevilleWekesa">LinkedIn</a>
+              <a href="/resume.pdf">Resume</a>
+            </div>
+          </section>
+
+          <section>
+            <h2>Tech Stack</h2>
+            <ul>
+              <li>React</li>
+              <li>Python</li>
+              <li>Docker</li>
+              <li>Tailwind CSS</li>
+              <li>PostgreSQL</li>
+              <li>Next.js</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Projects</h2>
+            <div>
+              <h3>Portfolio Site</h3>
+              <p>A responsive portfolio built with React + Tailwind.</p>
+              <a href="https://github.com/nevillewekesaportfolio">GitHub</a>
+              <a href="https://nevillewekesa.dev">Live Demo</a>
+            </div>
+            <div>
+              <h3>Task Tracker App</h3>
+              <p>Track daily tasks with authentication and persistence.</p>
+              <a href="https://github.com/nevillewekesa/task-tracker">GitHub</a>
+              <a href="#">Live Demo</a>
+            </div>
+          </section>
+
+          <section>
+            <h2>Services</h2>
+            <ul>
+              <li>Website Development: $100+</li>
+              <li>Consulting (Hourly): $5/hr</li>
+              <li>Custom APIs: Quote upon request</li>
+            </ul>
+          </section>
+
+          <section style="text-align: center;">
+            <h2>Payment</h2>
+            <button id="payBtn">Pay Me</button>
+          </section>
+
+          <section>
+            <h2>Contact Me</h2>
+            <form id="contactForm" action="https://formspree.io/f/yourFormID" method="POST">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" placeholder="Message" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </section>
+        </main>
+      `;
+
+      document.getElementById("payBtn").addEventListener("click", () => {
+        console.log("Make payment");
+        alert("Redirecting to Stripe Checkout (mocked)...");
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>
